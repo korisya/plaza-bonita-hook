@@ -1,0 +1,12 @@
+#:schema node_modules/wrangler/config-schema.json
+name = "plaza-bonita-hook"
+main = "src/index.ts"
+compatibility_date = "2024-07-01"
+
+[triggers]
+crons = ["57 16 * * *"] # * * * * * = run every minute
+
+[[d1_databases]]
+binding = "DB"
+database_name = "prod-r1"
+database_id = "<your-db-id>"

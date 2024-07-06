@@ -1,0 +1,2 @@
+CREATE TABLE IF NOT EXISTS Stores (StoreId INTEGER PRIMARY KEY, StoreName TEXT, DaysOpen INTEGER);
+INSERT INTO Stores (StoreId, StoreName, DaysOpen) VALUES (39156327, 'Westfield Plaza Bonita', <number_of_days_plaza_bonita_has_been_open_plus_1>)
