@@ -154,6 +154,10 @@ async function sendDiscordMessage(msg: string, webhookId: string, webhookToken: 
 
     const response = await fetch(url, init)
     console.log(response)
+
+    if (response.status !== 204) {
+        await sendDiscordMessage(msg, webhookId, webhookToken)
+    }
 }
 
 export default {
